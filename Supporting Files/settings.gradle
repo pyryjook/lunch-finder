@@ -1,0 +1,4 @@
+include(":lunchfinder")
+project(":lunchfinder").projectDir = file("../lunchfinder")
+rootProject.name = file("..").name
+enableFeaturePreview("GRADLE_METADATA")

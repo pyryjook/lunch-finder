@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		9AFD90223338E62C877496CD /* lunchfinder.kexe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = lunchfinder.kexe; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFD91CA42F319CFA320DFFF /* main.kt */ = {isa = PBXFileReference; lastKnownFileType = file.kt; path = main.kt; sourceTree = "<group>"; };
+		9AFD931AEE9F198DADB7627B /* gradle-wrapper.properties */ = {isa = PBXFileReference; lastKnownFileType = file.properties; path = "gradle-wrapper.properties"; sourceTree = "<group>"; };
+		9AFD963895E4DEFF1CFCB5A2 /* location */ = {isa = PBXFileReference; lastKnownFileType = folder; path = location; sourceTree = "<group>"; };
+		9AFD970781E426F5A7893F4F /* build.gradle.kts */ = {isa = PBXFileReference; lastKnownFileType = file.kts; path = build.gradle.kts; sourceTree = "<group>"; };
+		9AFD9866219C9158749396CA /* gradle-wrapper.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "gradle-wrapper.jar"; sourceTree = "<group>"; };
+		9AFD99B92EB4A1011778ACF6 /* lunchfinderTest */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lunchfinderTest; sourceTree = "<group>"; };
+		9AFD9B565868294CFCDECA18 /* nativeInterop */ = {isa = PBXFileReference; lastKnownFileType = folder; path = nativeInterop; sourceTree = "<group>"; };
+		9AFD9C6FBA9BEDDD2BB84845 /* lunchfinder.kt */ = {isa = PBXFileReference; lastKnownFileType = file.kt; path = lunchfinder.kt; sourceTree = "<group>"; };
+		9AFD9C828195C80539A3E668 /* gradlew */ = {isa = PBXFileReference; lastKnownFileType = text; path = gradlew; sourceTree = "<group>"; };
+		9AFD9CBA08CC211C6B61F80E /* settings.gradle */ = {isa = PBXFileReference; lastKnownFileType = file.gradle; path = settings.gradle; sourceTree = "<group>"; };
+		9AFD9E72D099F05481D7B61E /* CoreLocation.def */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.def; name = CoreLocation.def; path = nativeInterop/cinterop/CoreLocation.def; sourceTree = "<group>"; };
+		9AFD9E893F1729E4CB2F5709 /* build.gradle */ = {isa = PBXFileReference; lastKnownFileType = file.gradle; path = build.gradle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		9AFD90C67B750F25A5BC4D46 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD9E893F1729E4CB2F5709 /* build.gradle */,
+				9AFD9C828195C80539A3E668 /* gradlew */,
+				9AFD90D2F587FAD6B1647DFE /* gradle */,
+				9AFD9CBA08CC211C6B61F80E /* settings.gradle */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AFD90D2F587FAD6B1647DFE /* gradle */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD962A65C80B7A3CEBCBDB /* wrapper */,
+			);
+			path = gradle;
+			sourceTree = "<group>";
+		};
+		9AFD9450EBAA8C2C51080115 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD90223338E62C877496CD /* lunchfinder.kexe */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AFD962A65C80B7A3CEBCBDB /* wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD931AEE9F198DADB7627B /* gradle-wrapper.properties */,
+				9AFD9866219C9158749396CA /* gradle-wrapper.jar */,
+			);
+			path = wrapper;
+			sourceTree = "<group>";
+		};
+		9AFD98C087644565F4F5B3F8 /* kotlin */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD91CA42F319CFA320DFFF /* main.kt */,
+				9AFD9C6FBA9BEDDD2BB84845 /* lunchfinder.kt */,
+				9AFD963895E4DEFF1CFCB5A2 /* location */,
+			);
+			path = kotlin;
+			sourceTree = "<group>";
+		};
+		9AFD98F20772815FE42739C1 /* lunchfinder */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD9E7B0A2A35B2E1E37B04 /* Supporting Files */,
+				9AFD99FAB47350312560EA66 /* src */,
+			);
+			path = lunchfinder;
+			sourceTree = "<group>";
+		};
+		9AFD99FAB47350312560EA66 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD9F9F60D6B749A7141D35 /* lunchfinderMain */,
+				9AFD99B92EB4A1011778ACF6 /* lunchfinderTest */,
+				9AFD9B565868294CFCDECA18 /* nativeInterop */,
+				9AFD9E72D099F05481D7B61E /* CoreLocation.def */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9AFD9E7B0A2A35B2E1E37B04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD970781E426F5A7893F4F /* build.gradle.kts */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AFD9F9F60D6B749A7141D35 /* lunchfinderMain */ = {
+			isa = PBXGroup;
+			children = (
+				9AFD98C087644565F4F5B3F8 /* kotlin */,
+			);
+			path = lunchfinderMain;
+			sourceTree = "<group>";
+		};
+		9AFD9FA8DEFCB02C2460C2F5 = {
+			isa = PBXGroup;
+			children = (
+				9AFD9450EBAA8C2C51080115 /* Products */,
+				9AFD98F20772815FE42739C1 /* lunchfinder */,
+				9AFD90C67B750F25A5BC4D46 /* Supporting Files */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AFD93EAEF2BBBD983674876 /* lunchfinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AFD949B0DBE644E457C09B0 /* Build configuration list for PBXNativeTarget "lunchfinder" */;
+			buildPhases = (
+				9AFD9BDFE7296FD2F61E1CE7 /* Compile Kotlin/Native */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lunchfinder;
+			productName = lunchfinder;
+			productReference = 9AFD90223338E62C877496CD /* lunchfinder.kexe */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AFD9AA96385D89D67A3E89F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = pyryjook;
+			};
+			buildConfigurationList = 9AFD9DA36935CE1846CDEDDB /* Build configuration list for PBXProject "lunchfinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 9AFD9FA8DEFCB02C2460C2F5;
+			productRefGroup = 9AFD9450EBAA8C2C51080115 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AFD93EAEF2BBBD983674876 /* lunchfinder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AFD9BDFE7296FD2F61E1CE7 /* Compile Kotlin/Native */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Kotlin/Native";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ -z \"$KOTLIN_NATIVE_BUILD_CAPABLE\" ]; then\ncd \"$SRCROOT/Supporting Files\"\nsh -c \". gradlew buildForXcode\"\nfi\n            ";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9AFD920AD49642EAFFCEA1FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9AFD957585992A712973D95D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9AFD9B15C7DE2166B0EED0CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME).kexe";
+			};
+			name = Debug;
+		};
+		9AFD9E75103A73EEDBED93BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME).kexe";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AFD949B0DBE644E457C09B0 /* Build configuration list for PBXNativeTarget "lunchfinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFD9B15C7DE2166B0EED0CA /* Debug */,
+				9AFD9E75103A73EEDBED93BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AFD9DA36935CE1846CDEDDB /* Build configuration list for PBXProject "lunchfinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFD957585992A712973D95D /* Debug */,
+				9AFD920AD49642EAFFCEA1FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AFD9AA96385D89D67A3E89F /* Project object */;
+}
