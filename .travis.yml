@@ -1,0 +1,21 @@
+os: osx
+osx_image: xcode10.2
+language: java
+
+branches:
+  only:
+    - master
+
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
+cache:
+  - cocoapods
+
+install:
+  - gem install cocoapods --version 1.4.0
+
+script:
+  - ./gradlew clean build --refresh-dependencies --console plain
+
