@@ -1,7 +1,7 @@
 package de.lunchtime
 
-import de.lunchtime.location.getLocation
 import de.lunchtime.coroutines.MainLoopDispatcher
+import de.lunchtime.location.initLocation
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import platform.CoreFoundation.CFRunLoopRun
@@ -12,6 +12,7 @@ object Lunchtime
 
 fun Lunchtime.run() {
     GlobalScope.launch(MainLoopDispatcher) {
+        val getLocation = initLocation()
         try {
             val loc = getLocation()
             println(loc)
