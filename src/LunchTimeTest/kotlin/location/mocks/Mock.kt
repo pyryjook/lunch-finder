@@ -5,10 +5,12 @@ import de.lunchtime.location.initLocationManager
 import platform.CoreLocation.CLLocation
 import platform.Foundation.NSError
 
-
-
 private const val MOCK_ERROR_NAME = "Mocked"
 private const val MOCK_ERROR_CODE = 9999L
+
+/*
+ This module is here until proper K/N mocking library is available (or found). Point is to make tests readable.
+*/
 
 private class MockLocationManagerError : LocationManager {
     override fun subscribe(onUpdate: (CLLocation?) -> Unit, onError: (NSError) -> Unit) {
