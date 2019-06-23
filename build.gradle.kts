@@ -20,7 +20,6 @@ kotlin {
             }
         }
 
-
 //        val main by compilations.getting
 
         compilations.all {

@@ -4,7 +4,15 @@ import platform.CoreLocation.*
 import platform.Foundation.NSError
 import platform.darwin.NSObject
 
-internal class LocationManager {
+internal interface LocationManager {
+    fun subscribe(onUpdate: (CLLocation?) -> Unit, onError: (NSError) -> Unit)
+}
+
+internal class InternalLocationManager: LocationManager {
+
+    private lateinit var onUpdate: (CLLocation?) -> Unit
+
+    private lateinit var onError: (NSError) -> Unit
 
     private val delegateImpl = object : NSObject(), CLLocationManagerDelegateProtocol {
         override fun locationManager(manager: CLLocationManager, didUpdateLocations: List<*>) {
@@ -23,11 +31,7 @@ internal class LocationManager {
 
     private val manager = CLLocationManager().apply { delegate = delegateImpl }
 
-    private lateinit var onUpdate: (CLLocation?) -> Unit
-
-    private lateinit var onError: (NSError) -> Unit
-
-    fun subscribe(onUpdate: (CLLocation?) -> Unit, onError: (NSError) -> Unit) {
+    override fun subscribe(onUpdate: (CLLocation?) -> Unit, onError: (NSError) -> Unit) {
         manager.requestLocation()
 
         this.onUpdate = onUpdate

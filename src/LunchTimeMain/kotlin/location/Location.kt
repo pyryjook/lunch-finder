@@ -19,12 +19,14 @@ private fun <T>onLocationData(
     }
 
 
-suspend fun getLocation(): Location =
+private suspend fun getLocation(lm: LocationManager): Location =
     suspendCoroutine {continuation ->
-        val lm = LocationManager()
-
         lm.subscribe(
             onUpdate = { location -> onLocationData(continuation, location) },
             onError = { error -> onLocationData(continuation, error) }
         )
     }
+
+internal fun initLocationManager(lm: LocationManager) = suspend { getLocation(lm) }
+
+fun initLocation() = initLocationManager(InternalLocationManager())
