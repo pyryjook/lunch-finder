@@ -34,9 +34,9 @@ class LocationTest {
         // assert
         assertFailsWith<LocationException> { runBlocking { getLocation() } }
     }
-    
+
     @Test
-    fun `should fail with LocationException when location is null`() {
+    fun `should fail with LocationException when emitted location is null`() {
         // arrange
         val getLocation = mockLocationFetchToSucceedWithNull()
 
