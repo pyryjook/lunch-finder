@@ -14,7 +14,7 @@ import kotlin.test.assertFailsWith
 class LocationTest {
 
     @Test
-    fun `should successfully get the location`() {
+    fun `should successfully emit the location`() {
         // arrange
         val expected = Location(latitude = 0.0, longitude = 0.0)
         val getLocation = mockLocationFetchToSucceed()
